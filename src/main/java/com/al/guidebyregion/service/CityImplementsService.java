@@ -34,4 +34,8 @@ public class CityImplementsService implements CityService {
     public void deleteById(int id) {
         cityDAO.deleteById(id);
     }
+    @Override
+    public City findByName(String name){
+       return cityDAO.getByName(name);
+    }
 }

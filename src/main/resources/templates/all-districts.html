@@ -42,6 +42,13 @@
                 </tbody>
             </table>
         </div>
+        <nav class="navbar navbar-light bg-light">
+            <form class="form-inline" action="#" th:action="@{/test/view/find-city}" method="get">
+                <input class="form-control mr-sm-2" type="text" name="cityName" id="nameCity"
+                       placeholder="Введите название города">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
+            </form>
+        </nav>
     </div>
 </div>
 </body>
